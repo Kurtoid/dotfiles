@@ -1,7 +1,11 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.node_modules/bin:$PATH
+export npm_config_prefix=~/.node_modules
 # Path to your oh-my-zsh installation.
 export ZSH="/home/kurt/.oh-my-zsh"
+
+# mixed DPI
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -50,7 +54,7 @@ fi
 ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -67,14 +71,14 @@ ENABLE_CORRECTION="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # yes, so we can add plugins as submodules
-ZSH_CUSTOM=~/.zsh_custom/
+ZSH_CUSTOM=~/.zsh_custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions z)
+plugins=(git zsh-autosuggestions z tmuxinator)
 
 # zsh-autosuggestions cloned into .oh-my-zsh/custom/plugins
 
@@ -85,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
