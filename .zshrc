@@ -78,7 +78,7 @@ ZSH_CUSTOM=~/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions z tmuxinator)
+plugins=(git zsh-autosuggestions z tmuxinator thefuck)
 
 # zsh-autosuggestions cloned into .oh-my-zsh/custom/plugins
 
@@ -113,6 +113,9 @@ fi
 # git dotfiles command
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# for when family is nearby
+eval $(thefuck --alias oops)
 
 # fix for dissapearing characters??
 export LC_ALL=en_US.UTF-8
