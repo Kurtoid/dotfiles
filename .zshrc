@@ -78,7 +78,7 @@ ZSH_CUSTOM=~/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions z tmuxinator thefuck)
+plugins=(git zsh-autosuggestions z tmuxinator thefuck zsh-syntax-highlighting)
 
 # zsh-autosuggestions cloned into .oh-my-zsh/custom/plugins
 
@@ -119,3 +119,6 @@ eval $(thefuck --alias oops)
 
 # fix for dissapearing characters??
 export LC_ALL=en_US.UTF-8
+export TESSDATA_PREFIX=/usr/share/tessdata/
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_USE_ASYNC=1
