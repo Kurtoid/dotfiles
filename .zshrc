@@ -120,5 +120,5 @@ eval $(thefuck --alias oops)
 # fix for dissapearing characters??
 export LC_ALL=en_US.UTF-8
 export TESSDATA_PREFIX=/usr/share/tessdata/
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 ZSH_AUTOSUGGEST_USE_ASYNC=1
