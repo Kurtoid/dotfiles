@@ -1,0 +1,2 @@
+[fs]
+hide=/snap.*,/boot/efi
