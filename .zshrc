@@ -1,5 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.local/bin:$HOME/.node_modules/bin:$PATH
+# add ruby gems
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
 export npm_config_prefix=~/.node_modules
 # Path to your oh-my-zsh installation.
 export ZSH="/home/kurt/.oh-my-zsh"
@@ -78,7 +81,7 @@ ZSH_CUSTOM=~/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(you-should-use git zsh-autosuggestions z tmuxinator thefuck zsh-syntax-highlighting)
+plugins=(you-should-use git zsh-autosuggestions z tmuxinator lsswp zsh-syntax-highlighting)
 
 # zsh-autosuggestions cloned into .oh-my-zsh/custom/plugins
 
@@ -112,13 +115,19 @@ fi
 
 # git dotfiles command
 # https://www.atlassian.com/git/tutorials/dotfiles
+source ~/.zsh_alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias xo=xdg-open
 
 # for when family is nearby
-eval $(thefuck --alias oops)
+# eval $(thefuck --alias oops)
 
 # fix for dissapearing characters??
 export LC_ALL=en_US.UTF-8
 export TESSDATA_PREFIX=/usr/share/tessdata/
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 ZSH_AUTOSUGGEST_USE_ASYNC=1
+
+
+# added by travis gem
+[ ! -s /home/kurt/.travis/travis.sh ] || source /home/kurt/.travis/travis.sh
