@@ -37,4 +37,4 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - glances --process-short-name -t 5 --sparkline --disable-plugin diskio -C ~/.config/glances
+        - glances --process-short-name -t 5 --sparkline -C ~/.config/glances
