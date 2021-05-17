@@ -4,7 +4,6 @@
     "editor.formatOnType": true,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "editor.formatOnSave": true,
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
     "C_Cpp.experimentalFeatures": "Enabled",
     "C_Cpp.updateChannel": "Insiders",
@@ -12,7 +11,6 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "java.semanticHighlighting.enabled": true,
-    "window.zoomLevel": 0,
     "python.insidersChannel": "off",
     "files.associations": {
         "*.py": "python"
@@ -39,7 +37,58 @@
     },
     "terminal.integrated.scrollback": 5000,
     "vsintellicode.features.python.deepLearning": "enabled",
-    "cSpell.userWords": [
-        "Odometry"
-    ]
+    "workbench.editor.enablePreview": false,
+    "customizeUI.font.regular": "Roboto",
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnSave": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "sonarlint.connectedMode.connections.sonarcloud": [
+        { "organizationKey": "group-28-small", "token": "e1abc71cc8f8211d6e465ec8b9299ad14d0608c5" },
+    ],
+    "sonarlint.rules": {
+        "java:S117": {
+            "level": "off"
+        },
+        "java:S106": {
+            "level": "off"
+        }
+    },
+    "colorInfo.languages": [
+
+
+        {
+            "selector": "css",
+            "colors": "css"
+        },
+        {
+            "selector": "sass",
+            "colors": "css"
+        },
+        {
+            "selector": "scss",
+            "colors": "css"
+        },
+        {
+            "selector": "less",
+            "colors": "css"
+        },
+        {
+            "selector": "js",
+            "colors": "css"
+        }
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "java.project.importHint": false,
+    "python.condaPath": "/opt/anaconda/bin/conda",
+    "cSpell.allowCompoundWords": true,
+    "cSpell.enabledLanguageIds": [
+        "latex",
+        "tex"
+    ],
+    "rust.clippy_preference": "on"
 }

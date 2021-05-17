@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:$HOME/.node_modules/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.node_modules/bin:$HOME/sonarcloud/bin:$PATH
 # add ruby gems
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
@@ -120,7 +120,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias xo=xdg-open
 
 # for when family is nearby
-# eval $(thefuck --alias oops)
+eval $(thefuck --alias oops)
 
 # fix for dissapearing characters??
 export LC_ALL=en_US.UTF-8
