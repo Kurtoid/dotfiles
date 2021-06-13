@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.local/bin:$HOME/.node_modules/bin:$HOME/sonarcloud/bin:$PATH
 # add ruby gems
@@ -16,7 +23,7 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 if [[ -n $DISPLAY ]];
 then
-    ZSH_THEME="agnoster"
+    ZSH_THEME="powerlevel10k/powerlevel10k"
 else 
     # powerline fonts dont work on tty, so use a simpler theme
     ZSH_THEME="awesomepanda"
@@ -131,3 +138,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 # added by travis gem
 [ ! -s /home/kurt/.travis/travis.sh ] || source /home/kurt/.travis/travis.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
