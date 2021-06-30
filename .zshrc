@@ -12,7 +12,7 @@ export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 export npm_config_prefix=~/.node_modules
 # Path to your oh-my-zsh installation.
-export ZSH="/home/kurt/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # mixed DPI
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
