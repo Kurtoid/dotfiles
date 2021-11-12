@@ -10,3 +10,6 @@
 [submodule ".zsh_custom/plugins/you-should-use"]
 	path = .zsh_custom/plugins/you-should-use
 	url = https://github.com/MichaelAquilina/zsh-you-should-use.git
+[submodule ".zsh_custom/themes/powerlevel10k"]
+	path = .zsh_custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
