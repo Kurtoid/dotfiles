@@ -26,7 +26,8 @@ then
     ZSH_THEME="powerlevel10k/powerlevel10k"
 else 
     # powerline fonts dont work on tty, so use a simpler theme
-    ZSH_THEME="awesomepanda"
+    # ZSH_THEME="awesomepanda"
+    ZSH_THEME="powerlevel10k/powerlevel10k"
 fi
 
 # Set list of themes to pick from when loading at random
@@ -134,7 +135,6 @@ export LC_ALL=en_US.UTF-8
 export TESSDATA_PREFIX=/usr/share/tessdata/
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 ZSH_AUTOSUGGEST_USE_ASYNC=1
-
 
 # added by travis gem
 [ ! -s /home/kurt/.travis/travis.sh ] || source /home/kurt/.travis/travis.sh
