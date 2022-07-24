@@ -89,7 +89,7 @@ ZSH_CUSTOM=~/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(you-should-use git zsh-autosuggestions z tmuxinator lsswp zsh-syntax-highlighting)
+plugins=(you-should-use sudo git zsh-autosuggestions z tmuxinator lsswp fzf aws zsh-syntax-highlighting)
 
 # zsh-autosuggestions cloned into .oh-my-zsh/custom/plugins
 
@@ -120,17 +120,17 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.zsh_alias
 
 # git dotfiles command
 # https://www.atlassian.com/git/tutorials/dotfiles
-source ~/.zsh_alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias xo=xdg-open
 
 # for when family is nearby
-eval $(thefuck --alias oops)
+# eval $(thefuck --alias oops)
 
-# fix for dissapearing characters??
+# fix for dissapearing characters
 export LC_ALL=en_US.UTF-8
 export TESSDATA_PREFIX=/usr/share/tessdata/
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
@@ -141,3 +141,5 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(navi widget zsh)"
